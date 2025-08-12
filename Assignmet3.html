@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #d35400;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #219150;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Restaurant Order Form</h1>
+
+<form action="#" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label>Meal Type:</label>
+    <input type="radio" id="veg" name="meal" value="Vegetarian" required> <label for="veg">Vegetarian</label>
+    <input type="radio" id="nonveg" name="meal" value="Non-Vegetarian"> <label for="nonveg">Non-Vegetarian</label>
+
+    <label>Extra Toppings:</label>
+    <input type="checkbox" name="toppings" value="Cheese"> Cheese
+    <input type="checkbox" name="toppings" value="Olives"> Olives
+    <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms
+
+    <label for="drink">Choose a Drink:</label>
+    <select id="drink" name="drink" required>
+        <option value="">--Select--</option>
+        <option value="Coke">Coke</option>
+        <option value="Pepsi">Pepsi</option>
+        <option value="Lemonade">Lemonade</option>
+    </select>
+
+    <button type="submit">Place Order</button>
+</form>
+
+</body>
+</html>

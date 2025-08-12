@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #colorButton, #increment, #decrement {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #counterValue {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lab 6 - JavaScript DOM Manipulation</h1>
+
+    <!-- Task 1 -->
+    <p id="text">This is some sample text.</p>
+    <button id="colorButton">Change Text Color</button>
+
+    <hr>
+
+    <!-- Task 2 -->
+    <div>
+        <button id="decrement">-</button>
+        <span id="counterValue">0</span>
+        <button id="increment">+</button>
+    </div>
+
+    <script>
+        // Task 1: Change text color
+        const colorButton = document.getElementById("colorButton");
+        const text = document.getElementById("text");
+        const colors = ["red", "green", "blue", "purple", "orange"];
+        let colorIndex = 0;
+
+        colorButton.addEventListener("click", function() {
+            text.style.color = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+        });
+
+        // Task 2: Counter
+        let counter = 0;
+        const counterValue = document.getElementById("counterValue");
+        const incrementBtn = document.getElementById("increment");
+        const decrementBtn = document.getElementById("decrement");
+
+        incrementBtn.addEventListener("click", function() {
+            counter++;
+            counterValue.textContent = counter;
+        });
+
+        decrementBtn.addEventListener("click", function() {
+            counter--;
+            counterValue.textContent = counter;
+        });
+    </script>
+
+</body>
+</html>

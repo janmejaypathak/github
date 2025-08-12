@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Lab 1</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 1: Headings -->
+    <h1 style="color:red;">Heading 1</h1>
+    <h2 style="color:blue;">Heading 2</h2>
+    <h3 style="font-family:Arial;">Heading 3</h3>
+    <h4 style="background-color:yellow;">Heading 4</h4>
+    <h5 style="text-decoration:underline;">Heading 5</h5>
+    <h6 style="font-style:italic;">Heading 6</h6>
+
+    <hr>
+
+    <!-- Task 2: Medical Process Lists -->
+    <h2>Patient Check-Up Steps</h2>
+    <ol>
+        <li>Register at reception</li>
+        <li>Wait for your turn</li>
+        <li>Consult the doctor</li>
+        <li>Get tests done</li>
+        <li>Collect reports</li>
+    </ol>
+
+    <ul>
+        <li>Bring ID proof</li>
+        <li>Have previous reports ready</li>
+        <li>Carry necessary medicines</li>
+    </ul>
+
+    <hr>
+
+    <!-- Task 3: Newspaper Layout Table -->
+    <h2>Newspaper Layout</h2>
+    <table>
+        <tr>
+            <td>News 1</td>
+            <td>News 2</td>
+            <td>News 3</td>
+        </tr>
+        <tr>
+            <td>News 4</td>
+            <td>News 5</td>
+            <td>News 6</td>
+        </tr>
+        <tr>
+            <td>News 7</td>
+            <td>News 8</td>
+            <td>News 9</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Task 4: Image Embedding & Mapping -->
+    <h2>Image Example</h2>
+    <img src="sample.jpg" alt="Sample" width="300" height="200">
+
+    <h2>Image Map Example</h2>
+    <img src="sample.jpg" alt="Map" usemap="#workmap" width="300" height="200">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Clickable Area" href="https://example.com">
+    </map>
+
+    <hr>
+
+    <!-- Task 5: Auto-Reloading Page -->
+    <script>
+        setTimeout(function() {
+            location.reload();
+        }, 5000); // Reload every 5 seconds
+    </script>
+
+</body>
+</html>

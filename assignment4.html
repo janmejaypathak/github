@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {font-family: Arial; margin:0; background:#eee;}
+nav {display:flex; background:#222; justify-content:center;}
+nav a {color:white; padding:10px 15px; text-decoration:none;}
+nav a:hover {background:orange; border-radius:3px;}
+p {padding:10px; font-size:17px;}
+p a {color:orange;}
+.gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; padding:10px;}
+.gallery img {width:100%; border-radius:5px;}
+.gallery img:hover {transform:scale(1.05);}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Gallery</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+<p>Welcome to my <a href="#">photo gallery</a> made with flex and grid.</p>
+
+<div class="gallery">
+<img src="image.png" alt = "wolf image">
+<img src="image.png" alt = "wolf image">
+<img src="image.png" alt = "wolf image">
+<img src="image.png" alt = "wolf image">
+</div>
+
+</body>
+</html>

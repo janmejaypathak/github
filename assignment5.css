@@ -1,0 +1,38 @@
+/* Background and font */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Headings */
+.main-heading {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Paragraph styling */
+.intro {
+    font-size: 18px;
+    color: #34495e;
+    line-height: 1.5;
+}
+
+/* Link styling */
+.my-link {
+    color: #2980b9;
+    text-decoration: none;
+}
+.my-link:hover {
+    color: red;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #ffe4e1;
+    }
+    .main-heading {
+        font-size: 20px;
+    }
+}
